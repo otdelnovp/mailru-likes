@@ -1,0 +1,56 @@
+.s-sharelist {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	height: 40px;
+	padding: 0;
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+	line-height: 0;
+	zoom: 1;
+}
+
+.s-share {
+	display: inline-block;
+	margin: 0 0 0 10px;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.s-share:first-child {
+	margin-left: 0;
+}
+
+.s-share__button {
+	display: inline-block;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	cursor: pointer;
+}
+
+.s-share:hover .s-share__button {
+	opacity: 0.7;
+}
+
+.s-share__count {
+	display: inline-block;
+	margin: 0;
+	font-size: 1.6rem;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.s-share_my .s-share__button {background-position:0 0px;}
+.s-share_ok .s-share__button {background-position:25% 0px;}
+.s-share_fb .s-share__button {background-position:50% 0px;}
+.s-share_vk .s-share__button {background-position:75% 0px;}
+.s-share_in .s-share__button {background-position:100% 0px;}
