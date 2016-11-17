@@ -28,6 +28,29 @@
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.Shares.js"></script>
+<script>
+    (function($) {
+        "use strict";
+        var jShares = $('.js-shares_all');
+        var sTweet = jShares.data('twshare');
+        jShares.initShareBtns({
+            //urlTypeParam: 'social',
+            getCntOnInit: true,
+            cssSels: {Btns: '.js-shares_all_btn'},
+            Counters: {
+                vk: '',
+                fb: '',
+                my: '',
+                ok: ''
+            },
+            prepareParams: function(oShareParams, sShareType) {
+                if (sShareType == 'tw' && sTweet) {
+                    oShareParams.Title = sTweet;
+                }
+            }
+        });
+    })(jQuery);
+</script>
 
 </body>
 </html>
